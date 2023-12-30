@@ -24,6 +24,7 @@ const SuggForm = () => {
         setEmail('')
         setPhone('')
         setMessage('')
+        alert('Submitted')
       })
       .catch(err => {
         console.log(err)
@@ -51,28 +52,28 @@ const SuggForm = () => {
           <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-[2rem] gap-[2rem]'>
             <div>
               <label htmlFor="">First Name</label><br />
-              <input target={fName} onChange={(e) => setFName(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" />
+              <input value={fName} onChange={(e) => setFName(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" />
 
             </div>
 
             <div>
               <label htmlFor="">Last Name</label><br />
-              <input target={lName} onChange={(e) => setLName(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" />
+              <input value={lName} onChange={(e) => setLName(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" />
             </div>
 
             <div>
               <label htmlFor="">Email</label><br />
-              <input target={email} onChange={(e) => setEmail(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" />
+              <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" />
             </div>
 
             <div>
               <label htmlFor="">Phone</label><br />
-              <input target={phone} onChange={(e) => setPhone(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" />
+              <input value={phone} onChange={(e) => setPhone(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" />
             </div>
           </div>
           <div className='mt-[2rem]'>
             <label htmlFor="">Message</label><br />
-            <textarea target={message} onChange={(e) => setMessage(e.target.value)} type="text" className='rounded-md px-5 py-5 lg:w-[31rem] text-black focus:border-none focus:outline-none hover:border-none' />
+            <textarea value={message} onChange={(e) => setMessage(e.target.value)} type="text" className='rounded-md px-5 py-5 lg:w-[31rem] text-black focus:border-none focus:outline-none hover:border-none' />
           </div>
           <button className='mt-3 bg-green-400 rounded-md py-2 px-4' type='submit'>Submit</button>
         </form>
