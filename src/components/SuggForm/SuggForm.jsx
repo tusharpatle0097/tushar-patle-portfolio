@@ -71,19 +71,19 @@ const SuggForm = () => {
         <form action="" onSubmit={submitForm}>
           <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-[2rem] gap-[2rem]'>
             <div>
-              <label htmlFor="">First Name</label><br />
+              <label htmlFor="">First Name:</label><br />
               <input value={fName} onChange={(e) => setFName(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" required />
             </div>
             <div>
-              <label htmlFor="">Last Name</label><br />
+              <label htmlFor="">Last Name:</label><br />
               <input value={lName} onChange={(e) => setLName(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" required />
             </div>
             <div>
-              <label htmlFor="">Email</label><br />
+              <label htmlFor="">Email:</label><br />
               <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" required />
             </div>
             <div>
-              <label htmlFor="">Phone</label><br />
+              <label htmlFor="">Phone:</label><br />
               <input
                 value={phone}
                 onChange={(e) => {
@@ -99,7 +99,7 @@ const SuggForm = () => {
             </div>
           </div>
           <div className='mt-[2rem]'>
-            <label htmlFor="">Message</label><br />
+            <label htmlFor="">Message:</label><br />
             <textarea value={message} onChange={(e) => setMessage(e.target.value)} type="text" className='rounded-md px-5 py-5 lg:w-[31rem] text-black focus:border-none focus:outline-none hover:border-none' required />
           </div>
           <button className='mt-3 bg-green-400 rounded-md py-2 px-4' type='submit'>Submit</button>
