@@ -8,7 +8,7 @@ const ProjectMain = () => {
   const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
 
   return (
-    <div>
+    <div className='animated animatedFadeInUp fadeInUp'>
       <div className='items-center justify-center mt-[7rem]'>
         <h3 className={`${isDarkMode ? 'text-white' : ''} text-[30px] font-semibold uppercase text-center`}> projects </h3>
 

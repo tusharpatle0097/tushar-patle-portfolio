@@ -53,7 +53,7 @@ const SuggForm = () => {
   };
 
   return (
-    <div className='mt-[5rem]'>
+    <div className='mt-[5rem] animated animatedFadeInUp fadeInUp'>
       <div className='items-center justify-center mt-[7rem]'>
         <h3 className={`${isDarkMode ? 'text-white' : ''} text-[30px] font-semibold uppercase text-center`}> GET IN TOUCH </h3>
       </div>

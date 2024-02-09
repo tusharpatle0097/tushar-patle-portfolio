@@ -18,6 +18,7 @@ const Experience = () => {
 
     return (
         <>
+        <div className="animated animatedFadeInUp fadeInUp">
             <div className='text-center'>
                 <div className={`${isDarkMode?'text-white':'' } text-[30px] font-semibold uppercase mt-[8rem]`}>EXPERIENCE</div>
                 <p className="text-[20px] font-semibold mt-2 text-[#47e1e1] " id="exp-line">These are the technologies I've worked with</p>
@@ -111,7 +112,7 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-
+            </div>
         </>
     )
 }
