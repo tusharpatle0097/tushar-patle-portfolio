@@ -3,6 +3,8 @@ import WeatherApp from '../projects/WeatherApp'
 import TodoList from '../projects/TodoList'
 import CryptoPage from '../projects/CryptoPage'
 import { DarkModeContext } from '../../context/DarkModeTheme';
+import EComSite from '../EComSite/EComSite';
+
 
 const ProjectMain = () => {
   const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
@@ -14,6 +16,7 @@ const ProjectMain = () => {
 
         <p className='text-[20px] font-semibold text-center mt-2 text-[#47e1e1]'>Check out some of my work right here</p>
       </div>
+      <EComSite/>
       <CryptoPage />
       <WeatherApp />
       <TodoList />
