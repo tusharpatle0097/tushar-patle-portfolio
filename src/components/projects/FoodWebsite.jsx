@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import cryptoApp from '../../assets/cryptoApp.mp4';
 import { DarkModeContext } from '../../context/DarkModeTheme';
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 import foodweb from '../../assets/foodWeb.mp4'
 
 const FoodWebsite = () => {
@@ -9,15 +9,18 @@ const FoodWebsite = () => {
 
     return (
         <>
+            {/* <div className='items-center justify-center mt-[7rem]'>
+                <h3 className='text-black text-[30px]  font-semibold uppercase text-center'> projects </h3>
+                <p className='text-[20px] font-semibold text-center mt-2 text-[paleturquoise]'>Check out some of my work right here</p>
+            </div> */}
+            <div className="flex flex-col md:flex-row mt-[2rem]">
+                {/* First Column */}
+               
 
-            <div>
-                <div className="flex flex-col md:flex-row mt-[2rem]">
-                    {/* First Column */}
-
-                    {/* Second Column */}
-                    <div className="md:w-1/2">
-                        <Fade left>
-                            <div className="text-center md:text-left lg:w-[85%] lg:ml-[4rem]">
+                {/* Second Column */}
+                <div className="md:w-1/2">
+                    <Fade right>
+                    <div className="text-center md:text-left lg:w-[85%] lg:ml-[4rem]">
                                 <h3 className={`text-[32px] font-bold mb-2 ${isDarkMode ? 'text-white' : ''} `}>Food Site</h3>
                                 <p className='font-bold text-[#ff0044] text-[16px]'>Technology used: React.js, CSS, SCSS, Meal DB API</p>
                                 <div className='px-5 lg:text-justify'>
@@ -37,18 +40,17 @@ const FoodWebsite = () => {
                                 </div>
 
                             </div>
-                        </Fade>
-                    </div>
-                    <Fade right>
-                        <div className="md:w-1/2 p-4 mt-10 lg:mr-[5rem]">
-                            <div className="text-center md:text-left lg:ml-[3rem]">
-                                <video src={foodweb} autoPlay loop controls className='border-[3px] rounded-lg hover:scale-110 duration-200'></video>
-                            </div>
+                    </Fade >
+                </div>
+                <div className="md:w-1/2  p-4 mt-8">
+                    <Fade left>
+                        <div className="text-center md:text-left lg:ml-[3rem]">
+                            <video src={foodweb} autoPlay loop controls className='border-[3px] lg:w-[600px] rounded-lg hover:scale-110 duration-200'></video>
                         </div>
-                    </Fade>
-
+                    </Fade >
                 </div>
             </div>
+
         </>
     )
 }

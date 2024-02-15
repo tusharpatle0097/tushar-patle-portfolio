@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import weatherImg from '../../assets/weather-img.png'
 import { DarkModeContext } from '../../context/DarkModeTheme';
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 import ecomV from '../../assets/e-com.mp4'
 
 const EComSite = () => {
