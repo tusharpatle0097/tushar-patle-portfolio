@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 // import ReactTyped from "react-typed";
-import tusharCv from '../../assets/Tushar cv.pdf'
+import tusharCv from '../../assets/Tushar Patle Updated Cv.pdf'
 import Experience from '../experience/Experience';
 import ProjectMain from '../project/ProjectMain';
 import { DarkModeContext } from '../../context/DarkModeTheme';
@@ -15,7 +15,7 @@ const Home = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = tusharCv;
-    link.download = 'Tushar Patle Resume.pdf';
+    link.download = 'Tushar Patle CV';
     link.click();
   };
   return (
