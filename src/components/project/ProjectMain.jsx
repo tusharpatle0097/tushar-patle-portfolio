@@ -5,6 +5,7 @@ import CryptoPage from '../projects/CryptoPage'
 import { DarkModeContext } from '../../context/DarkModeTheme';
 import EComSite from '../EComSite/EComSite';
 import FoodWebsite from '../projects/FoodWebsite';
+import MovieSearch from '../projects/MovieSearch';
 
 
 const ProjectMain = () => {
@@ -17,11 +18,12 @@ const ProjectMain = () => {
 
         <p className='text-[20px] font-semibold text-center mt-2 text-[#47e1e1]'>Check out some of my work right here</p>
       </div>
-      <FoodWebsite/>
-      <EComSite/>
+      <FoodWebsite />
+      <EComSite />
       <CryptoPage />
-      <WeatherApp />
+      <MovieSearch />
       <TodoList />
+      <WeatherApp />
     </div>
   )
 }

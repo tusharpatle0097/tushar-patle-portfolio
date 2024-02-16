@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import cryptoApp from '../../assets/cryptoApp.mp4';
 import { DarkModeContext } from '../../context/DarkModeTheme';
 import { Fade } from "react-awesome-reveal";
 import foodweb from '../../assets/foodWeb.mp4'

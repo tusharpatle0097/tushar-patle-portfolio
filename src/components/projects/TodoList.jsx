@@ -20,7 +20,7 @@ const TodoList = () => {
                     <Fade left>
                         <div className="text-center md:text-left lg:w-[85%] lg:ml-[4rem]">
                             <h3 className={`text-[32px] font-bold mb-2 ${isDarkMode ? 'text-white' : ''} `}>Todo List App</h3>
-                            <p className='font-bold text-[#ff0044] text-[16px]'>Technology used:React.js and Tailwind CSS</p>
+                            <p className='font-bold text-[#ff0044] text-[16px]'>Technology used:React.js, Tailwind CSS and Moke API</p>
                             <div className='px-5 lg:text-justify'>
                                 <p className={` text-[17px] ${isDarkMode ? 'text-white' : ''}`}>"I developed a comprehensive ToDo/CRUD (Create, Read, Update, Delete) application using React.js and Tailwind CSS, leveraging Axios for seamless API integration to perform CRUD operations. This app features a user-friendly interface with interactive components and employs React Toastify for effective notifications. Additionally, I implemented robust validation mechanisms to ensure data integrity and prevent errors during user input. The app utilizes various HTTP methods (POST, GET, DELETE, PUT) to interact with the backend API, facilitating smooth data transmission and management. Through this project, I honed my skills in React development, API integration, responsive UI design with Tailwind CSS, and proficiently managed state using React hooks."
 
