@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
 import Routings from './routing/Routings';
-// hello
+// hello Tushar
 const App = () => {
   return (
     <div>
