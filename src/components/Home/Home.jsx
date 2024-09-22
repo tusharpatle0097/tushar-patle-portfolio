@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 // import ReactTyped from "react-typed";
-import tusharCv from '../../assets/Tushar Patle Updated Cv.pdf'
+import tusharCv from '../../assets/Tushar Patle Resume.pdf'
 import Experience from '../experience/Experience';
 import ProjectMain from '../project/ProjectMain';
 import { DarkModeContext } from '../../context/DarkModeTheme';
