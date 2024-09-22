@@ -20,7 +20,7 @@ const KamlaAi = () => {
                     <Fade left>
                         <div className="text-center md:text-left lg:w-[85%] lg:ml-[4rem]">
                             <h3 className={`text-[32px] font-bold mb-2 ${isDarkMode ? 'text-white' : ''} `}>Client Website: Kamla AI Pvt Ltd.</h3>
-                            <p className='font-bold text-[#ff0044] text-[16px]'>Technology used:React.js, Tailwind CSS and Emamil.Js</p>
+                            <p className='font-bold text-[#ff0044] text-[16px]'>Technology used:React.js, Tailwind CSS and Email.Js</p>
                             <div className='px-5 lg:text-justify'>
                                 <p className={` text-[17px] ${isDarkMode ? 'text-white' : ''}`}>This project involved developing a fully responsive and dynamic website for a client using cutting-edge web technologies. I utilized **React.js** for building an interactive and efficient user interface, ensuring smooth performance and a seamless user experience. For styling, I implemented **Tailwind CSS**, which allowed for highly customizable and maintainable designs, giving the site a modern and professional look. Additionally, I integrated **Email.js** for form handling, enabling direct and secure email communication without the need for backend server configuration. This project highlights my ability to create sleek, user-friendly websites with clean code and efficient design practices.</p>
                                 <div className='flex gap-[2rem] justify-center'>
