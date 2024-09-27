@@ -3,11 +3,12 @@ import { DarkModeContext } from '../../context/DarkModeTheme';
 import { MdEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
 import axios from 'axios';
+import { apiUrl } from '../../Constant';
 
 const SuggForm = () => {
   const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
-  const [fName, setFName] = useState('');
-  const [lName, setLName] = useState('');
+  const [fname, setFName] = useState('');
+  const [lname, setLName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
@@ -36,8 +37,8 @@ const SuggForm = () => {
       return;
     }
 
-    let data = { fName, lName, email, phone, message };
-    axios.post(`https://6405ae28eed195a99f893772.mockapi.io/crud-operation`, data)
+    let data = { fname: fname, lname: lname, email: email, phone: phone, message: message };
+    axios.post(`${apiUrl}`, data)
       .then(res => {
         console.log(res);
         setFName('');
@@ -72,11 +73,11 @@ const SuggForm = () => {
           <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-[2rem] gap-[2rem]'>
             <div>
               <label htmlFor="">First Name:</label><br />
-              <input value={fName} onChange={(e) => setFName(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" required />
+              <input value={fname} onChange={(e) => setFName(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" required />
             </div>
             <div>
               <label htmlFor="">Last Name:</label><br />
-              <input value={lName} onChange={(e) => setLName(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" required />
+              <input value={lname} onChange={(e) => setLName(e.target.value)} type="text" className="rounded-md px-5 py-2 text-black focus:border-none focus:outline-none hover:border-none" required />
             </div>
             <div>
               <label htmlFor="">Email:</label><br />

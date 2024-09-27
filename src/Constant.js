@@ -1,0 +1,1 @@
+export const apiUrl = "https://backend-node-main.onrender.com/user"
